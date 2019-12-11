@@ -1,15 +1,15 @@
 ---
-title: "The RESTinTown Package Explained"
+title: "The bestrestaurantintown Package Explained"
 author: "Nikky Xiong"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{RESTinTown}
+  %\VignetteIndexEntry{bestrestaurantintown}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-The `The RESTinTown` package contains four functions: `cacounty()`, `plot_ca()`, `yelp_api()`, and `RESTinTown()`.
+The `bestrestaurantintown` package contains four functions: `cacounty()`, `plot_ca()`, `yelp_api()`, and `RESTinTown()`.
 
 ## `cacounty` Function
   

@@ -3,7 +3,7 @@
 \docType{data}
 \name{Rest_In_Towns}
 \alias{Rest_In_Towns}
-\title{Average Heights and Weights for American Women}
+\title{Information about Best-Rated Restaurants in Counties of California and More}
 \format{The Rest_In_Towns data frame contains 55 observations on 13 variables.
 \describe{
   \item{City}{City Name}

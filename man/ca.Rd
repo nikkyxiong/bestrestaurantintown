@@ -13,12 +13,14 @@
 }}
 \source{
 \url{https://en.wikipedia.org/wiki/List_of_cities_and_towns_in_California}
+
+\url{http://worldpopulationreview.com/states/california-population/cities/}
 }
 \usage{
 ca
 }
 \description{
 This data provides a list of counties in California
-with information of name, population in 2010 ans 2019, and land area.
+with information of name, population in 2010 and 2019, and land area.
 }
 \keyword{datasets}
