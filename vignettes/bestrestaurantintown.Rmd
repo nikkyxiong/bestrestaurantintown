@@ -1,0 +1,52 @@
+---
+title: "The RESTinTown Package Explained"
+author: "Nikky Xiong"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{RESTinTown}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The `The RESTinTown` package contains four functions: `cacounty()`, `plot_ca()`, `yelp_api()`, and `RESTinTown()`.
+
+## `cacounty` Function
+  
+The `cacounty` function joins a few datasets to create a data frame with information of county's name, population in 2010, population in 2019, and land area in California.
+
+```{r eval=FALSE}
+library(bestresturantintown)
+cacounty()
+```
+
+## `plot_ca` Function
+  
+The `plot_ca` function plots one scatterplot about the population in 2010 and the area of counties in California with the best fitting line for the data frame, ca.
+
+```{r eval=FALSE}
+library(bestresturantintown)
+plot_ca()
+```
+
+## `yelp_api` Function
+
+The `yelp_api` function requests information about Chinese restaurants in one California county on Yelp through Yelp Fusion API. After some analysis, this function returns a data frame with information about the average rating and average review counts for Chinese restaurant in the county, along with the name, rating, and review counts of the best-rated Chinese resturant.
+
+User inputs are required. A `county` needs to be specified to get relative information about Chinese restaurants in this county from Yelp API. A `Yelp_key` is used as the user's key for Yelp API.
+
+```{r eval=FALSE}
+library(bestresturantintown)
+yelp_api()
+```
+
+## `RESTinTown` Function
+
+The `RESTinTown` function relies on `cacounty` and `yelp_api` functions to requests information about Chinese restaurants on Yelp through Yelp Fusion API by each county in California. In the end, this function returns a data frame that contains both information from cacounty and yelp_api, along with new variables of average number of restaurants per person, average number of resturants per square kilometers.
+
+User input is required. A `county` needs to be specified to get relative information about Chinese resturants in this county from Yelp API.
+
+```{r eval=FALSE}
+library(bestresturantintown)
+RESTinTown()
+```

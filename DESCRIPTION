@@ -1,0 +1,31 @@
+Package: bestrestaurantintown
+Type: Package
+Title: show a list of information about the Chinese restaurants in the counties of California
+Version: 0.1.0
+Authors@R: person("Nikky", "Xiong", email = "wangyu.xiong@columbia.edu",
+      role = c("aut", "cre"))
+Description: Get a list of basic information about counties in California,
+	along with general information about the Chinese restaurants 
+	and the best one in each county according to the information on Yelp.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Imports: 
+    dplyr,
+    rvest,
+    stringr,
+    httr,
+    jsonlite,
+    usethis,
+    devtools,
+    magrittr,
+    xml2,
+    spam,
+    ggplot2
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
